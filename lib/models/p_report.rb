@@ -1,5 +1,5 @@
 class PReport < ActiveRecord::Base
-  validates_presence_of :code, :name, :kind
+  validates_presence_of :code, :name
   validates_uniqueness_of :name
   
   def run

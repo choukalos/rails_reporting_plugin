@@ -3,13 +3,13 @@
 <table width = "100%">
   <tr>
     <th>Name</th>
-    <th>Code</th>
+    <th>Description</th>
   </tr>
 
 <% @p_reports.each do |report| %>
   <tr>
     <td width = '20%'><%=h report.name %></td>
-    <td><%=h report.code %></td>
+    <td><%=h report.description %></td>
     <td><%= link_to 'HTML', p_report_path(report) %></td>
     <td><%= link_to 'CSV',  p_report_path(report, :format => :csv) %></td>
     <td><%= link_to 'XLS',  p_report_path(report, :format => :xls) %></td>
