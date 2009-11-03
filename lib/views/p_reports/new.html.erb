@@ -1,0 +1,20 @@
+<h1>New p_report</h1>
+
+<% form_for(@p_report) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_area :code %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', p_reports_path %>

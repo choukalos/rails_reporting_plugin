@@ -1,0 +1,42 @@
+RailsReportingPlugin
+====================
+
+This rails plugin allows one to easily create and view arbitrary reports of your database.  This plugin when fully installed 
+creates several controller/models/view directories in your application.  To CRUD a report just navigate to http://localhost:3000/p_report/ .
+
+You can view reports as HTML or download them as .csv or .xls .
+
+Install
+=======
+
+Prerequisites
+	This plugin relies on the spreadsheet-excel gem to work.
+	
+	sudo gem install spreadsheet-excel
+	
+How to Install
+
+	script/plugin install git://github.com/choukalos/rails_reporting_plugin.git
+	
+	script/generate rails_reporting_plugin
+	rake db:migrate
+	
+	
+Usage
+=====
+
+Navigate to http://localhost:3000/p_report/
+
+
+Customization
+=============
+
+Edit the controller, model or views as appropriate
+
+
+
+Contact
+=======
+for hints, questions etc. please email choukalos[at]gmail.com
+
+Copyright (c) 2009 Chuck Choukalos, released under the MIT license

@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @p_report.name %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%=h @p_report.code %>
+</p>
+<br/>
+
+<%= render :partial => 'data_table', :locals => { :table => @data } %>
+
+<br/>
+
+
+<%= link_to 'Edit', edit_p_report_path(@p_report) %> |
+<%= link_to 'Back', p_reports_path %>
