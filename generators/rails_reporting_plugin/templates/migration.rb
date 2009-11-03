@@ -1,4 +1,4 @@
-class CreateRailsReportingPlugins < ActiveRecord::Migration
+class CreateRailsReportingPlugin < ActiveRecord::Migration
   def self.up
     create_table :p_reports do |t|
       t.string :name
